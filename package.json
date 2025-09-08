@@ -1,0 +1,16 @@
+{
+  "name": "trayx",
+  "version": "1.0.0",
+  "description": "landing page for TrayX app",
+  "main": "vite.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "artw1n",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss-pxtorem": "^6.1.0",
+    "sass": "^1.90.0",
+    "vite": "^7.1.3"
+  }
+}

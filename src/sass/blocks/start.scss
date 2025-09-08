@@ -1,0 +1,69 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.start {
+    padding-top: 115px;
+    padding-bottom: 100px;
+    &__title {
+        line-height: 100%;
+    }
+
+    &__wrapper {
+        margin: 0 auto;
+        margin-top: 70px;
+        width: 960px;
+        border-radius: 29.176px;
+        border: 2.431px solid #D1D1D1;
+        background: rgba(255, 255, 255, 0.90);
+        position: relative;
+        &-text {
+            margin: 60px 60px 0 60px;
+            color: $dark-big-text;
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: normal;
+
+            ul {
+                list-style-type: "– ";
+            }
+        }
+
+        &-btn {
+            margin: 40px auto 21px auto;
+            color: #DADADA;
+            padding:16px 42px;
+            font-family: Poppins;
+            font-size: 18px;
+            line-height: 20px;
+        }
+        
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            top: -80px;
+            left: 734px;
+            width: 304px;
+            height: 304px;
+
+            background: radial-gradient(circle, rgba(210, 81, 255, 0.40), transparent 100%);
+            filter: blur(76px);
+            z-index: -1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            top: 400px;
+            left: -100px;
+            width: 304px;
+            height: 304px;
+        
+            background: radial-gradient(circle, rgba(254,145,30,0.40), transparent 100%);
+            filter: blur(76px);
+            z-index: -1;
+        }
+                
+    }
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for TrayX app">
+    <meta name="author" content="artw1n">
+    
+    <title>TrayX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <section class="home">
+        <div class="container">
+            <div class="header">
+               <div class="header__item">
+                    <div class="header__logo">
+                        <img src="/src/img/logo.svg" alt="logo" class="header__logo-img">
+                        <div class="header__logo-info">
+                            <div class="header__title">TrayX</div>
+                            <div class="header__text">by artw1n.</div>
+                        </div>
+                    </div>
+                    <div class="header__divider"></div>
+                    <nav class="header__nav">
+                        <ul>
+                            <li><a href="#" class="header__menu-link">Home</a></li>
+                            <li><a href="#" class="header__menu-link">Features</a></li>
+                            <li><a href="#" class="header__menu-link">Getting Started</a></li>
+                        </ul>
+                    </nav>
+               </div>
+                
+                <div class="header__block">
+                    <div class="header__block-lang">
+                        <div>En</div>
+                        <div><img src="/src/img/home/arrow.svg" alt="arrow" class="header__lang-img"></div>
+                    </div>
+                    <button class="btn-download header__btn">Download</button>
+                </div>
+            </div>
+
+            <div class="home__wrapper">
+                <h1 class="home__title-h1">the best tool<br>
+                <span>for your windows tray</span></h1>
+
+                <h2 class="home__title-h2">TrayX is a lightweight Windows application that adds informative icons to the tray</h2>
+                <div class="home__btns">
+                    <button class="btn-download home__btn">Download the app</button>
+                    <button class="btn-instruction home__btn">Instruction</button>
+                </div>
+                <div class="home__pictures">
+                    <img src="/src/img/home/app.png" alt="App" class="home__pictures-img">
+                    <div class="home__pictures-bg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="taskbar">
+        <img src="/src/img/taskbar/taskbarDark.png" alt="taskbar" class="taskbar__img">
+    </section>
+    <section class="features">
+        <div class="container">             
+            <h2 class="title-h2">Features</h2>
+            <div class="features__grid">
+                <div class="features__item">
+                    <div id="workflow-img">
+                        <img src="/src/img/features/workflow.png" alt="workflow" class="features__img">
+                    </div>
+                </div>
+                <div class="features__item">
+                    <h3 class="title-h3">Workflow-friendly</h3>
+                    <div class="features__info">Runs quietly in the background, always ready when you need system stats, without
+                        interrupting your tasks.</div>
+                </div>
+                <div class="features__item" id="temperature-item">
+                    <div id="temperature-img">
+                        <img src="/src/img/features/temperature.png" alt="temperature monitoring" class="features__img">
+                    </div>
+                </div>
+                <div class="features__item" id="temperature-info">
+                    <h3 class="title-h3">Real-time Graphs</h3>
+                    <div class="features__info">Visualize data with dynamic graphs, making it easier to monitor system performance
+                        and track changes over time</div>
+                </div>
+                <div class="features__item">
+                    <div id="system-img">
+                        <img src="/src/img/features/system.png" alt="system monitoring" class="features__img">
+                    </div>
+                </div>
+                <div class="features__item">
+                    <h3 class="title-h3">Information Panels</h3>
+                    <div class="features__info">Compact pop-up panels that appear when clicking the icon, providing essential data
+                        (e.g., CPU/GPU temperature, memory
+                        and disk usage).</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="start">
+        <div class="container">
+            <h2 class="title-h2 start__title">Getting started</h2>
+            <div class="start__wrapper">
+                <div class="start__wrapper-text">
+                    <ol>
+                        <li>
+                            Download TrayX
+                            <ul>
+                                <li>Click the “Download” button on our website to get the ZIP archive.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Extract the Archive
+                            <ul>
+                                <li>Unpack the contents into any folder you prefer. No installation required — TrayX runs without setup.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Launch the Application
+                            <ul>
+                                <li>Run TrayX.exe. After starting, its icon will appear in the system tray.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Customize Your Experience
+                            <ul>
+                                <li>Open the main menu (Right-click the tray icon → “Open Menu”) to:</li>
+                                <li>Change the interface language;</li>
+                                <li>Enable or disable specific features;</li>
+                                <li>Adjust how tray icons are displayed.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Runs in the Background
+                            <ul>
+                                <li>Closing the main window does not quit the app; it keeps running in the tray.</li>
+                                <li>To fully exit TrayX, right-click the icon and select “Exit.”</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <button class="btn-download start__wrapper-btn">Let's Start</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__nav">
+                <div class="footer__nav-block">
+                    <h2 class="footer__header">Sections</h2>
+                    <ul>
+                        <li><a href="#" class="footer__text">Home</a></li>
+                        <li><a href="#" class="footer__text">Features</a></li>
+                        <li><a href="#" class="footer__text">Getting Started</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav-block">
+                    <h2 class="footer__header">Contact</h2>
+                    <ul>
+                        <li><a href="#" class="footer__text">Github</a></li>
+                        <li><a href="#" class="footer__text">Discord</a></li>
+                        <li><a href="#" class="footer__text">trayx@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <div class="footer__logo">
+                        <img src="/src/img/logo.svg" alt="logo" class="footer__logo-img">
+                        <div class="footer__logo-info">
+                            <div class="footer__title">TrayX</div>
+                            <div class="footer__text">by artw1n.</div>
+                        </div>
+                    </div>
+                    <div class="footer__divider"></div>
+                    <div class="footer__text footer__item-text">@2025 TrayX. All rights reserved</div>
+                </div>
+            
+                <div class="footer__block">
+                    <div class="footer__text footer__block-text"><a href="#">Terms & Conditions</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/src/js/script.js"></script>
+</body>
+</html>

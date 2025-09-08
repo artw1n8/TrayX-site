@@ -1,0 +1,94 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.features {
+    padding-top: 107px;
+
+    &__grid {
+        margin: 0 240px 0 240px;
+        margin-top: 104px;
+        display: grid;
+        grid-template-columns: repeat(2 , 3fr);
+        row-gap: 130px;
+    }
+
+    #temperature-item {
+        grid-column: 2/3;
+        justify-self: right;
+        margin-right: 25px;
+    }
+
+    #temperature-info {
+        grid-row: 2;
+        grid-column: 1/2;
+    }
+
+    &__info {
+        margin-top: 9px;
+        color: $dark-text;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__img {
+        margin-left: 25px;
+        z-index: 1;
+    }
+
+    #workflow-img {
+        position: relative;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            top: -55px;
+            left: 30px;
+            width: 429px;
+            height: 429px;
+    
+            background: radial-gradient(circle, rgba(210, 81, 255, 0.50), transparent 100%);
+            filter: blur(76px);
+            z-index: -1;
+        }
+    }
+
+    #temperature-img {
+        position: relative;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            top: -20px;
+            left: 30px;
+            width: 396px;
+            height: 377px;
+            rotate: 15deg;
+            background: radial-gradient(circle, rgba(254, 145, 30, 0.50), transparent 100%);
+            filter: blur(76px);
+            z-index: -1;
+        }
+    }
+
+    #system-img {
+        position: relative;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            top: -55px;
+            left: -23px;
+            width: 638px;
+            height: 638px;
+            rotate: -48deg;
+    
+            background: radial-gradient(circle, rgba(210, 81, 255, 0.30), transparent 100%);
+            filter: blur(76px);
+            z-index: -1;
+        }
+    }
+        
+}

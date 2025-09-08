@@ -1,0 +1,72 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.home {
+    padding-top: 34px;
+    background: url("/src/img/home/bg.png") bottom center / contain no-repeat;
+    // background-attachment: fixed;
+    background-position-y: 490px;
+
+
+    &__wrapper {
+        margin-top: 206px;
+    }
+
+    &__title-h1 {
+        color: $dark-titles;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 600;
+        line-height: 70px;
+        text-transform: capitalize;
+        
+        span {
+            background: linear-gradient(270deg, #D251FF 2.65%, #FE911E 97.45%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+    }
+
+    &__title-h2 {
+        margin-top: 16px;
+        color: #6A6A6A;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: center;
+        column-gap: 25px;
+        margin-top: 20px;
+    }
+
+    &__btn {
+        font-size: 18px;
+        font-family: Poppins;
+        padding: 12px 36px;
+    }
+
+    &__pictures {
+        margin-top: 64px;
+        position: relative;
+        &-img {
+            padding: 0 90px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            top: 50%;
+            margin: 0 91px;
+            background: linear-gradient(0deg, #FDFDFD 0%, rgba(253, 253, 253, 0.00) 100%);
+        }
+                
+    }
+}
