@@ -17,6 +17,21 @@
     <section class="home">
         <div class="container">
             <div class="header">
+                <div class="header__menu">
+                    <div class="header__menu-close">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="header__menu-nav">
+                        <ul>
+                            <li><a href="#" class="header__menu-link">Home</a></li>
+                            <li><a href="#" class="header__menu-link">Features</a></li>
+                            <li><a href="#" class="header__menu-link">Getting Started</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                    
+
                <div class="header__item">
                     <div class="header__logo">
                         <img src="/src/img/logo.svg" alt="logo" class="header__logo-img">
@@ -37,10 +52,18 @@
                 
                 <div class="header__block">
                     <div class="header__block-lang">
-                        <div>En</div>
-                        <div><img src="/src/img/home/arrow.svg" alt="arrow" class="header__lang-img"></div>
+                        <button>En <span><img src="/src/img/home/arrow.svg" alt="arrow" class="header__lang-img"></span></button>
+                        <div class="header__block-lang-content">
+                            <a href="#">En</a>
+                            <a href="#">Ru</a>
+                        </div>
                     </div>
                     <button class="btn-download header__btn">Download</button>
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
 
@@ -73,7 +96,7 @@
                     </div>
                 </div>
                 <div class="features__item">
-                    <h3 class="title-h3">Workflow-friendly</h3>
+                    <h3 class="title-h3 features__title-h3">Workflow-friendly</h3>
                     <div class="features__info">Runs quietly in the background, always ready when you need system stats, without
                         interrupting your tasks.</div>
                 </div>
@@ -83,7 +106,7 @@
                     </div>
                 </div>
                 <div class="features__item" id="temperature-info">
-                    <h3 class="title-h3">Real-time Graphs</h3>
+                    <h3 class="title-h3 features__title-h3">Real-time Graphs</h3>
                     <div class="features__info">Visualize data with dynamic graphs, making it easier to monitor system performance
                         and track changes over time</div>
                 </div>
@@ -93,7 +116,7 @@
                     </div>
                 </div>
                 <div class="features__item">
-                    <h3 class="title-h3">Information Panels</h3>
+                    <h3 class="title-h3 features__title-h3">Information Panels</h3>
                     <div class="features__info">Compact pop-up panels that appear when clicking the icon, providing essential data
                         (e.g., CPU/GPU temperature, memory
                         and disk usage).</div>
@@ -165,7 +188,6 @@
                     <ul>
                         <li><a href="#" class="footer__text">Github</a></li>
                         <li><a href="#" class="footer__text">Discord</a></li>
-                        <li><a href="#" class="footer__text">trayx@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
@@ -179,11 +201,11 @@
                         </div>
                     </div>
                     <div class="footer__divider"></div>
-                    <div class="footer__text footer__item-text">@2025 TrayX. All rights reserved</div>
+                    <div class="footer__text footer__item-text">@2025 TrayX.</div>
                 </div>
             
                 <div class="footer__block">
-                    <div class="footer__text footer__block-text"><a href="#">Terms & Conditions</a></div>
+                    <div class="footer__text footer__block-text"><a href="#">trayx@gmail.com</a></div>
                 </div>
             </div>
         </div>

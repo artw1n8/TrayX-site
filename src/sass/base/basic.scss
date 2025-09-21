@@ -45,22 +45,20 @@ body {
     padding: 0 100px;
 }
 
-// @media screen and (min-width: 768px) {
-//     .container {
-//         max-width: 720px;
-//         padding: 0;
-//         margin: 0 auto;
-//     }
-// }
+@media screen and (max-width: 1000px) {
+    .container {
+        padding: 0 60px;
+    }
+}
 
-// @media screen and (min-width: 1200px) {
-//     .container {
-//         max-width: 1140px;
-//     }
-// }
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
+}
 
-// @media screen and (min-width: 1920px) {
-//     .container {
-//         max-width: 1440px;
-//     }
-// }
+@media screen and (max-width: 425px) {
+    .container {
+        padding: 0 20px;
+    }
+}

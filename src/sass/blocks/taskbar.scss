@@ -6,3 +6,22 @@
         object-fit: cover;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .taskbar{
+        padding-top: 61px;
+
+        &__img {
+            // width: 150%;
+            object-fit: cover;
+        }
+    }   
+}
+
+@media screen and (max-width: 400px) {
+    .taskbar {
+        padding-top: 40px;
+    }
+
+
+}

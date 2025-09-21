@@ -4,7 +4,7 @@
     padding-top: 107px;
 
     &__grid {
-        margin: 0 240px 0 240px;
+        margin: 0 200px 0 200px;
         margin-top: 104px;
         display: grid;
         grid-template-columns: repeat(2 , 3fr);
@@ -89,6 +89,127 @@
             filter: blur(76px);
             z-index: -1;
         }
+    }   
+}
+
+@media screen and (max-width: 1800px) {
+    .features {
+        &__grid {
+            margin: 0;
+            margin-top: 104px;
+            row-gap: 99px;
+        }
     }
-        
+}
+
+@media screen and (max-width: 1300px) {
+    .features {
+
+        text-align: center;
+
+        &__grid {
+            grid-template-columns: repeat(1, 3fr);
+            margin-top: 45px;
+            justify-items: center;
+            row-gap: 40px;
+        }
+
+        &__info {
+            max-width: 850px;
+            margin-top: 0px;
+        }
+
+        &__img {
+            margin-left: 0px;
+            margin-top: 50px;   
+        }
+
+        #temperature-item {
+            grid-column: auto;
+            justify-self: center;
+            margin-right: 0px;
+        }
+
+        #temperature-info {
+            grid-row: auto;
+            grid-column: auto;
+            justify-self: center;
+        }
+
+        #system-img {
+            &::after {
+                width: 538px;
+                height: 538px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features {
+        padding-top: 60px;
+        &__grid {
+            margin-top: 15px;
+            row-gap: 30px;
+        }
+
+        &__info {
+            font-size: 12px;
+        }
+
+        &__img {
+            margin-left: 0px;
+            margin-top: 40px;
+        }
+
+        #system-img {
+            
+
+            &::after {
+                top: -35px;
+                rotate: 0deg;
+                left: 0px;
+                max-width: 90vw;
+                max-height: 100vh;
+            }
+        }
+
+        #workflow-img {
+            &::after {
+                top: -105px;
+                rotate: 0deg;
+                left: 0px;
+                max-width: 80vw;
+                max-height: 100vh;
+            }
+        }
+
+        #temperature-img {
+            &::after {
+                top: -35px;
+                rotate: 0deg;
+                left: 0px;
+                max-width: 80vw;
+                max-height: 100vh;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .features {
+        &__grid {
+            margin-top: 15px;
+            row-gap: 25px;
+        }
+
+        &__info {
+            font-size: 12px;
+        }
+
+        &__img {
+            margin-left: 0px;
+            margin-top: 40px;
+        }
+    }
 }
