@@ -43,12 +43,20 @@
         justify-content: center;
         column-gap: 25px;
         margin-top: 20px;
+        a {
+            text-decoration: none;
+        }
     }
 
     &__btn {
         font-size: 18px;
         font-family: Poppins;
         padding: 12px 36px;
+    }
+
+    &__btn:hover {
+        color: $light;
+        background-color: $dark-titles;
     }
 
     &__pictures {

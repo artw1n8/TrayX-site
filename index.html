@@ -24,9 +24,9 @@
                     </div>
                     <nav class="header__menu-nav">
                         <ul>
-                            <li><a href="#" class="header__menu-link">Home</a></li>
-                            <li><a href="#" class="header__menu-link">Features</a></li>
-                            <li><a href="#" class="header__menu-link">Getting Started</a></li>
+                            <li><a href="#home" class="header__menu-link">Home</a></li>
+                            <li><a href="#features" class="header__menu-link">Features</a></li>
+                            <li><a href="#start" class="header__menu-link">Getting Started</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -43,9 +43,9 @@
                     <div class="header__divider"></div>
                     <nav class="header__nav">
                         <ul>
-                            <li><a href="#" class="header__menu-link">Home</a></li>
-                            <li><a href="#" class="header__menu-link">Features</a></li>
-                            <li><a href="#" class="header__menu-link">Getting Started</a></li>
+                            <li><a href="#home" class="header__menu-link">Home</a></li>
+                            <li><a href="#features" class="header__menu-link">Features</a></li>
+                            <li><a href="#start" class="header__menu-link">Getting Started</a></li>
                         </ul>
                     </nav>
                </div>
@@ -67,14 +67,18 @@
                 </div>
             </div>
 
-            <div class="home__wrapper">
+            <div class="home__wrapper" id="home">
                 <h1 class="home__title-h1">the best tool<br>
                 <span>for your windows tray</span></h1>
 
                 <h2 class="home__title-h2">TrayX is a lightweight Windows application that adds informative icons to the tray</h2>
                 <div class="home__btns">
-                    <button class="btn-download home__btn">Download the app</button>
-                    <button class="btn-instruction home__btn">Instruction</button>
+                    <a href="/src/files/Release.7z" download>
+                        <button class="btn-download home__btn">Download the app</button>
+                    </a>
+                    <a href="#start">
+                        <button class="btn-instruction home__btn">Instruction</button>
+                    </a>
                 </div>
                 <div class="home__pictures">
                     <img src="/src/img/home/app.png" alt="App" class="home__pictures-img">
@@ -86,7 +90,7 @@
     <section class="taskbar">
         <img src="/src/img/taskbar/taskbarDark.png" alt="taskbar" class="taskbar__img">
     </section>
-    <section class="features">
+    <section class="features" id="features">
         <div class="container">             
             <h2 class="title-h2">Features</h2>
             <div class="features__grid">
@@ -124,7 +128,7 @@
             </div>
         </div>
     </section>
-    <section class="start">
+    <section class="start" id="start">
         <div class="container">
             <h2 class="title-h2 start__title">Getting started</h2>
             <div class="start__wrapper">
@@ -167,8 +171,9 @@
                         </li>
                     </ol>
                 </div>
-
-                <button class="btn-download start__wrapper-btn">Let's Start</button>
+                <a href="#home">
+                    <button class="btn-download start__wrapper-btn">Let's Start</button>
+                </a>
             </div>
         </div>
     </section>
@@ -178,15 +183,15 @@
                 <div class="footer__nav-block">
                     <h2 class="footer__header">Sections</h2>
                     <ul>
-                        <li><a href="#" class="footer__text">Home</a></li>
-                        <li><a href="#" class="footer__text">Features</a></li>
-                        <li><a href="#" class="footer__text">Getting Started</a></li>
+                        <li><a href="#home" class="footer__text">Home</a></li>
+                        <li><a href="#features" class="footer__text">Features</a></li>
+                        <li><a href="#start" class="footer__text">Getting Started</a></li>
                     </ul>
                 </div>
                 <div class="footer__nav-block">
                     <h2 class="footer__header">Contact</h2>
                     <ul>
-                        <li><a href="#" class="footer__text">Github</a></li>
+                        <li><a href="https://github.com/artw1n8/" target="_blank" class="footer__text">Github</a></li>
                         <li><a href="#" class="footer__text">Discord</a></li>
                     </ul>
                 </div>
