@@ -73,7 +73,9 @@ const changeLang = (lang) => {
     const startInstr = document.querySelector(".start__wrapper-text");
     const footerSection = document.querySelectorAll(".footer__header")[0];
     const footerContact = document.querySelectorAll(".footer__header")[1];
-
+    const navBtns = document.querySelectorAll(".header__menu-link");
+    const footerBtns = document.querySelectorAll(".footer__text");
+    console.log(footerBtns)
     title.innerHTML = json[lang].title;
     desc.textContent = json[lang].description;
     mainBtn.innerHTML = json[lang]["button-main-download"];
@@ -93,6 +95,22 @@ const changeLang = (lang) => {
     featuresDesc.forEach((desc, i) => {
         desc.textContent = json[lang][`desc-features-${i+1}`];
     });
+
+    const navLocal = [json[lang]["nav-home"], json[lang]["nav-features"], json[lang]["nav-start"]];
+    let i = 0;
+
+    navBtns.forEach((btn) => {
+        btn.innerHTML = navLocal[i];
+        (i<2) ? i++ : i=0;
+    });
+
+    i = 0;
+    footerBtns.forEach((btn) => {
+        if(i <= 2){
+            btn.innerHTML = navLocal[i];
+            i++;
+        }
+    })
 }
 
 if(!localStorage.getItem('lang')){
